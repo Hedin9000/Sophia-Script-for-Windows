@@ -204,11 +204,11 @@ WindowsWelcomeExperience -Hide
 
 # Get tips and suggestions when I use Windows (default value)
 # Получать советы и предложения при использованию Windows (значение по умолчанию)
-WindowsTips -Enable
+#WindowsTips -Enable
 
 # Do not get tips and suggestions when I use Windows
 # Не получать советы и предложения при использованию Windows
-# WindowsTips -Disable
+WindowsTips -Disable
 
 # Hide from me suggested content in the Settings app
 # Скрывать рекомендуемое содержимое в приложении "Параметры"
@@ -262,11 +262,11 @@ ThisPC -Show
 
 # Enable the Windows 10 File Explorer
 # Включить проводник из Windows 10
-Windows10FileExplorer -Enable
+#Windows10FileExplorer -Enable
 
 # Disable the Windows 10 File Explorer (default value)
 # Выключить проводник из Windows 10 (значение по умолчанию)
-# Windows10FileExplorer -Disable
+Windows10FileExplorer -Disable
 
 # Do not use item check boxes
 # Не использовать флажки для выбора элементов
@@ -326,11 +326,11 @@ OneDriveFileExplorerAd -Hide
 
 # When I snap a window, do not show what I can snap next to it
 # При прикреплении окна не показывать, что можно прикрепить рядом с ним
-SnapAssist -Disable
+#SnapAssist -Disable
 
 # When I snap a window, show what I can snap next to it (default value)
 # При прикреплении окна показывать, что можно прикрепить рядом с ним (значение по умолчанию)
-# SnapAssist -Enable
+SnapAssist -Enable
 
 # Show snap layouts when I hover over a windows's maximaze button (default value)
 # Показывать макеты прикрепления, частью которых является приложение, при наведении указателя мыши на кнопки панели задач (значение по умолчанию)
@@ -374,11 +374,11 @@ QuickAccessFrequentFolders -Hide
 
 # Set the taskbar alignment to the left
 # Установить выравнивание панели задач по левому краю
-TaskbarAlignment -Left
+# TaskbarAlignment -Left
 
 # Set the taskbar alignment to the center (default value)
 # Установить выравнивание панели задач по центру (значение по умолчанию)
-# TaskbarAlignment -Center
+TaskbarAlignment -Center
 
 # Hide the search button from the taskbar
 # Скрыть кнопку поиска с панели задач
@@ -390,11 +390,11 @@ TaskbarSearch -Hide
 
 # Hide the Task view button on the taskbar
 # Скрыть кнопку "Представление задач" с панели задач
-TaskViewButton -Hide
+# TaskViewButton -Hide
 
 # Show the Task view button on the taskbar (default value)
 # Отобразить кнопку "Представление задач" на панели задач (значение по умолчанию)
-# TaskViewButton -Show
+TaskViewButton -Show
 
 # Hide the widgets icon on the taskbar
 # Скрыть кнопку "Мини-приложения" с панели задач
@@ -418,11 +418,11 @@ UnpinTaskbarShortcuts -Shortcuts Edge, Store
 
 # View the Control Panel icons by large icons
 # Просмотр иконок Панели управления как: крупные значки
-ControlPanelView -LargeIcons
+# ControlPanelView -LargeIcons
 
 # View the Control Panel icons by small icons
 # Просмотр иконок Панели управления как: маленькие значки
-# ControlPanelView -SmallIcons
+ControlPanelView -SmallIcons
 
 # View the Control Panel icons by category (default value)
 # Просмотр иконок Панели управления как: категория (значение по умолчанию)
@@ -612,11 +612,11 @@ WaitNetworkStartup -Enable
 
 # Do not let Windows manage my default printer
 # Не разрешать Windows управлять принтером, используемым по умолчанию
-WindowsManageDefaultPrinter -Disable
+# WindowsManageDefaultPrinter -Disable
 
 # Let Windows manage my default printer (default value)
 # Разрешать Windows управлять принтером, используемым по умолчанию (значение по умолчанию)
-# WindowsManageDefaultPrinter -Enable
+WindowsManageDefaultPrinter -Enable
 
 <#
 	Disable the Windows features using the pop-up dialog box
@@ -688,7 +688,7 @@ NetworkAdaptersSavePower -Disable
 	Выключить IP версии 6 (TCP/IPv6)
 	Перед выполнением функции будет провердена проверка: поддерживает ли ваш провайдер IPv6, используя ресурс https://ipv6-test.com
 #>
-IPv6Component -Disable
+# IPv6Component -Disable
 
 <#
 	Enable the Internet Protocol Version 6 (TCP/IPv6) component for all network connections (default value)
@@ -697,7 +697,7 @@ IPv6Component -Disable
 	Включить IP версии 6 (TCP/IPv6) (значение по умолчанию)
 	Перед выполнением функции будет провердена проверка: поддерживает ли ваш провайдер IPv6, используя ресурс https://ipv6-test.com
 #>
-# IPv6Component -Enable
+IPv6Component -Enable
 
 # Override for default input method: English
 # Переопределить метод ввода по умолчанию: английский
@@ -716,7 +716,7 @@ InputMethod -English
 	Пользовательские файлы и папки не будут перемещены в новое расположение. Переместите их вручную
 	По умолчанию они располагаются в папке %USERPROFILE%
 #>
-SetUserShellFolderLocation -Root
+# SetUserShellFolderLocation -Root
 
 <#
 	Select folders for user folders location manually using a folder browser dialog
@@ -762,7 +762,7 @@ WinPrtScrFolder -Desktop
 	Автоматически запускать средства устранения неполадок, а затем уведомлять
 	Чтобы заработала данная функция, уровень сбора диагностических данных ОС будет установлен на "Необязательные диагностические данные" и включится создание отчетов об ошибках Windows
 #>
-RecommendedTroubleshooting -Automatically
+# RecommendedTroubleshooting -Automatically
 
 <#
 	Ask me before running troubleshooter (default value)
@@ -771,7 +771,7 @@ RecommendedTroubleshooting -Automatically
 	Спрашивать перед запуском средств устранения неполадок (значение по умолчанию)
 	Чтобы заработала данная функция, уровень сбора диагностических данных ОС будет установлен на "Необязательные диагностические данные" и включится создание отчетов об ошибках Windows
 #>
-# RecommendedTroubleshooting -Default
+RecommendedTroubleshooting -Default
 
 # Launch folder windows in a separate process
 # Запускать окна с папками в отдельном процессе
@@ -783,11 +783,11 @@ FoldersLaunchSeparateProcess -Enable
 
 # Disable and delete reserved storage after the next update installation
 # Отключить и удалить зарезервированное хранилище после следующей установки обновлений
-ReservedStorage -Disable
+# ReservedStorage -Disable
 
 # Enable reserved storage (default value)
 # Включить зарезервированное хранилище (значение по умолчанию)
-# ReservedStorage -Enable
+ReservedStorage -Enable
 
 # Disable help lookup via F1
 # Отключить открытие справки по нажатию F1
@@ -831,19 +831,19 @@ Autoplay -Disable
 
 # Disable thumbnail cache removal
 # Отключить удаление кэша миниатюр
-ThumbnailCacheRemoval -Disable
+# ThumbnailCacheRemoval -Disable
 
 # Enable thumbnail cache removal (default value)
 # Включить удаление кэша миниатюр (значение по умолчанию)
-# ThumbnailCacheRemoval -Enable
+ThumbnailCacheRemoval -Enable
 
 # Automatically saving my restartable apps and restart them when I sign back in
 # Автоматически сохранять мои перезапускаемые приложения из системы и перезапускать их при повторном входе
-SaveRestartableApps -Enable
+# SaveRestartableApps -Enable
 
 # Turn off automatically saving my restartable apps and restart them when I sign back in (default value)
 # Выключить автоматическое сохранение моих перезапускаемых приложений из системы и перезапускать их при повторном входе (значение по умолчанию)
-# SaveRestartableApps -Disable
+SaveRestartableApps -Disable
 
 # Enable "Network Discovery" and "File and Printers Sharing" for workgroup networks
 # Включить сетевое обнаружение и общий доступ к файлам и принтерам для рабочих групп
@@ -863,11 +863,11 @@ ActiveHours -Automatically
 
 # Restart as soon as possible to finish updating
 # Перезапустить устройство как можно быстрее, чтобы завершить обновление
-RestartDeviceAfterUpdate -Enable
+# RestartDeviceAfterUpdate -Enable
 
 # Don't restart as soon as possible to finish updating (default value)
 # Не перезапускать устройство как можно быстрее, чтобы завершить обновление (значение по умолчанию)
-# RestartDeviceAfterUpdate -Disable
+RestartDeviceAfterUpdate -Disable
 
 <#
 	Register app, calculate hash, and associate with an extension with the "How do you want to open this" pop-up hidden
@@ -895,7 +895,7 @@ DefaultTerminalApp -WindowsTerminal
 	Установить подсистему Windows для Linux (WSL), последний пакет обновления ядра Linux и дистрибутив Linux, используя всплывающую форму
 	Чтобы получать обновления ядра, включите параметр "При обновлении Windows поулчать обновления для других продуктов Майкрософт" в Центре обновлении Windows
 #>
-# WSL -Enable
+WSL -Enable
 #endregion WSL
 
 #region Start menu
@@ -1034,11 +1034,11 @@ TempTask -Register
 #region Microsoft Defender & Security
 # Enable Microsoft Defender Exploit Guard network protection
 # Включить защиту сети в Microsoft Defender Exploit Guard
-NetworkProtection -Enable
+# NetworkProtection -Enable
 
 # Disable Microsoft Defender Exploit Guard network protection (default value)
 # Выключить защиту сети в Microsoft Defender Exploit Guard
-# NetworkProtection -Disable
+NetworkProtection -Disable
 
 # Enable detection for potentially unwanted applications and block them
 # Включить обнаружение потенциально нежелательных приложений и блокировать их
@@ -1055,7 +1055,7 @@ PUAppsDetection -Enable
 	Включить песочницу для Microsoft Defender
 	В KVM с QEMU присутствует баг: включение этой функции приводит ВМ к зависанию во время загрузки Windows
 #>
-DefenderSandbox -Enable
+# DefenderSandbox -Enable
 
 # Disable sandboxing for Microsoft Defender (default value)
 # Выключить песочницу для Microsoft Defender (значение по умолчанию)
@@ -1189,11 +1189,11 @@ CABInstallContext -Show
 
 # Show the "Run as different user" item to the .exe filename extensions context menu
 # Отобразить пункт "Запуск от имени другого пользователя" в контекстное меню .exe файлов
-RunAsDifferentUserContext -Show
+# RunAsDifferentUserContext -Show
 
 # Hide the "Run as different user" item from the .exe filename extensions context menu (default value)
 # Скрыть пункт "Запуск от имени другого пользователя" из контекстное меню .exe файлов (значение по умолчанию)
-# RunAsDifferentUserContext -Hide
+RunAsDifferentUserContext -Hide
 
 # Hide the "Cast to Device" item from the media files and folders context menu
 # Скрыть пункт "Передать на устройство" из контекстного меню медиа-файлов и папок
@@ -1253,19 +1253,19 @@ SendToContext -Hide
 
 # Hide the "Turn on BitLocker" item from the drives context menu
 # Скрыть пункт "Включить BitLocker" из контекстного меню дисков
-BitLockerContext -Hide
+# BitLockerContext -Hide
 
 # Show the "Turn on BitLocker" item in the drives context menu (default value)
 # Отобразить пункт "Включить BitLocker" в контекстном меню дисков (значение по умолчанию)
-# BitLockerContext -Show
+BitLockerContext -Show
 
 # Hide the "Compressed (zipped) Folder" item from the "New" context menu
 # Скрыть пункт "Сжатая ZIP-папка" из контекстного меню "Создать"
-CompressedFolderNewContext -Hide
+# CompressedFolderNewContext -Hide
 
 # Show the "Compressed (zipped) Folder" item to the "New" context menu (default value)
 # Отобразить пункт "Сжатая ZIP-папка" в контекстном меню "Создать" (значение по умолчанию)
-# CompressedFolderNewContext -Show
+CompressedFolderNewContext -Show
 
 # Enable the "Open", "Print", and "Edit" context menu items for more than 15 items selected
 # Включить элементы контекстного меню "Открыть", "Изменить" и "Печать" при выделении более 15 элементов
@@ -1285,11 +1285,11 @@ UseStoreOpenWith -Hide
 
 # Hide the "Open in Windows Terminal" item in the folders context menu
 # Скрыть пункт "Открыть в Терминале Windows" в контекстном меню папок
-OpenWindowsTerminalContext -Hide
+# OpenWindowsTerminalContext -Hide
 
 # Show the "Open in Windows Terminal" item in the folders context menu (default value)
 # Отобразить пункт "Открыть в Терминале Windows" в контекстном меню папок (значение по умолчанию)
-# OpenWindowsTerminalContext -Show
+OpenWindowsTerminalContext -Show
 
 # Show the "Open in Windows Terminal (Admin)" item in the Desktop and folders context menu
 # Отобразить пункт "Открыть в Терминале Windows (Администратор)" в контекстном меню Рабочего стола и папок
